@@ -29,7 +29,7 @@ npm run serve
 
 Index.html depends on: 
 - Index.js - Contains the JS logic to handle the form submission.
-- Api.js - contains the JS logic to handle the POST request to the API.
+- Api.js - Contains the JS logic to handle the POST request to the API.
 
 Success.html depends on: 
 - Success.js - Handles the logic of populating the response data as the new account data.
