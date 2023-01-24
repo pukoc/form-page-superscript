@@ -17,6 +17,7 @@ Then open it in your chosen IDE. (Visual Studio Code Terminal Example below)
 ## Usage
 
 ```bash
+Make sure you have Node installed on your machine.
 # 1. install the necessary packages for the project.
 npm install
 
