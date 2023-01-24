@@ -8,8 +8,9 @@ Clone the repo to your local machine.
 Then open it in your chosen IDE. (Visual Studio Code Terminal Example below)
 
 ```bash
-1. cd (the location of the project on your machine)/form-page-superscript
-2. code .
+1. git clone https://github.com/pukoc/form-page-superscript
+2. cd (the location of the project on your machine)/form-page-superscript
+3. code .
 
 ```
 
