@@ -54,3 +54,5 @@ Some future proofing was done in case some data doesn’t exist on both expired 
 
 What would make this process easier in the future?
 - Being exposed to Front-End work on a daily basis and having a deeper understanding of Vue.js as well as best Front-End practices will make this process quicker in the future.
+
+![logo](https://user-images.githubusercontent.com/34858839/214443489-6c4452b8-f91e-4d5f-8092-d39e29fd4942.png)
