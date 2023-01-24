@@ -1,0 +1,68 @@
+$background: #e8e8e8;
+$success: #36efc2;
+
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+html {
+    background-color: $background;
+}
+
+body {
+    background-color: $background;
+}
+
+section {
+    padding: 25px 0 0 0;
+
+    .summary {
+        padding: 16px 0;
+        background-color: $black;
+        color: $white;
+        line-height: 0.5;
+        font-weight: 14px;
+
+        .btn {
+            border-radius: 3px;
+        }
+    }
+}
+
+.navbar {
+    background-color: $white;
+    position: relative;
+    height: 6rem;
+    box-shadow: 0px 5px 5px #d2d2d2;
+
+    img {
+        max-height: 5rem;
+    }
+}
+
+.btn {
+    &.btn-turquoise {
+        background-color: $success;
+
+        &:hover {
+            color: black;
+            background-color: darken($color: #36efc2, $amount: 15%);
+        }
+    }
+}
+
+.alert {
+    &.alert-success {
+        border-left: 8px solid darken($color: $success, $amount: 15%);
+    }
+    
+    &.alert-danger {
+        p {
+            color: #842029;
+        }
+    }
+}
+
+.card {
+    &.card-success {
+        border-left: 8px solid darken($color: $success, $amount: 15%);
+    }
+}

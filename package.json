@@ -1,0 +1,20 @@
+{
+  "name": "superscript-form",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "http-server ."
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.2.3",
+    "bootstrap": "^5.2.3"
+  },
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}

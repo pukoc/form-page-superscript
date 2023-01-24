@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Account</title>
+        <link rel="icon" type="image/png" href="assets/images/favicon.png"/>
+		<link rel="stylesheet" href="assets/css/styles.css" />
+		<script src="https://unpkg.com/vue@3/dist/vue.global.js" defer></script>
+		<script src="assets/js/success.js" defer></script>
+	</head>
+
+	<body>
+		<nav class="navbar navbar-expand-lg">
+			<div class="container">
+				<a class="navbar-brand" href="#"
+					><img class="img-fluid" src="assets/images/logo2.gif" onclick="window.location.href='index.html'" alt="logo"
+				/></a>
+				<span class="navbar-text"> 
+                    <a href="tel:0333-772-0759">Call us on 0333 772 0759</a>
+                </span>
+			</div>
+		</nav>
+		<section>
+			<div id="success_page" class="container">
+				<div class="row mb-3">
+					<div class="col-12 col-md-10 offset-md-1 col-lg-8 offset-lg-2">
+						<div class="alert alert-success">
+							<h1 class="m-0">Success!</h1>
+							<p class="mb-2">Reference number: #{{ ref }}</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12 col-md-10 offset-md-1 col-lg-8 offset-lg-2">
+						<h2 class="mb-4">Your Products</h2>
+						<h3>Active</h3>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12 col-md-10 offset-md-1 col-lg-8 offset-lg-2">
+						<div class="card mb-4">
+							<div v-for="product in activeProducts" class="card-body">
+								<div class="row">
+									<div class="col-12 col-md-6">
+										<h4>{{ product.name }}</h4>
+										<div class="row">
+											<div class="col-12 col-md-6 text-muted">
+												<p v-if="product.startDate"  class="mb-0">Start Date:</p>
+												<p v-if="product.endDate" class="mb-0">End Date:</p>
+											</div>
+											<div class="col-12 col-md-6 text-muted">
+												<p v-if="product.startDate" class="mb-0">{{ product.startDate }}</p>
+												<p v-if="product.endDate" class="mb-0">{{ product.endDate }}</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-12 col-md-6 text-end">
+										<h4 v-if="product.price">&pound;{{ product.price }}</h4>
+									</div>
+								</div>
+								<hr />
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12 col-md-10 offset-md-1 col-lg-8 offset-lg-2">
+						<h3>Expired</h3>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12 col-md-10 offset-md-1 col-lg-8 offset-lg-2">
+						<div class="card mb-4 bg-danger text-white">
+							<div v-for="product in expiredProducts" class="card-body">
+								<div class="row">
+									<div class="col-12 col-md-6">
+										<h4>{{ product.name }}</h4>
+										<div class="row">
+											<div class="col-12 col-md-6 text-muted">
+												<p v-if="product.startDate" class="mb-0">Start Date:</p>
+												<p v-if="product.endDate" class="mb-0">End Date:</p>
+											</div>
+											<div class="col-12 col-md-6 text-muted">
+												<p v-if="product.startDate" class="mb-0">{{ product.startDate }}</p>
+												<p v-if="product.endDate" class="mb-0">{{ product.endDate }}</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-12 col-md-6 text-end">
+										<h4 v-if="product.price">&pound;{{ product.price }}</h4>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</body>
+</html>
