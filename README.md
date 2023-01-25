@@ -41,6 +41,7 @@ LocalStorage is used to cache the response data so we can use it for the Success
 Some future proofing was done in case some data doesn’t exist on both expired and active product cases.
 
 - Logo Animated Gif was done by me.
+- For design I used Bootstrap.
 
 ## Improvements:
 
