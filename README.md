@@ -46,7 +46,6 @@ Some future proofing was done in case some data doesn’t exist on both expired 
 
 - Adding RECAPTCHA to enable web hosts to distinguish between human and automated access to websites.
 - Better Validation, such as regex checking to make sure password entered is secure, currently there is validation on whether the password is the same as the confirmed password or whether the fields are empty or not.
-- Make form fields required in the front end as well saving us from making unnecessary API calls to the backend.
 - Abstract the caching to a different file and add some error handling such as the storage not being a valid json which will then cause an error, we can do a try - catch to handle those errors.
 - Use the full Vue.js framework to complete this project rather than just the library, but due to my lack of knowledge as of yet when it comes to Vue.js, I have decided to still use some aspects of Vue.js as it will be a good learning curve for me and it will make the code simpler and more readable.
 - Put more time into UX/UI and make the web experience better for the user, such as adding a Loading animation while the form is submitting, so the user knows that the form is being submitted/account being created, making it look better on mobile etc.
