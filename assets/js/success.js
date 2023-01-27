@@ -15,8 +15,6 @@ Vue.createApp({
 		this.ref = ref;
 		
         for (const [key, value] of Object.entries(products)) {
-			console.log({key, value})			
-
             if (value.hasPolicy) {
                 this.activeProducts.push({
                     name: key,
