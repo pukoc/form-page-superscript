@@ -1,4 +1,4 @@
-# Superscript Take Home Test Solution
+#Take Home Test Solution
 
 This is my solution to the take home test! I hope you enjoy it. I appreciate and look forward to any feedback good and bad as I am keen to learn and get better everyday.
 
